@@ -1,0 +1,59 @@
+<Workspace Version="1.3.3.4111" X="0.188000000000045" Y="67.523" zoom="0.8425" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="29fad1de-cef4-46a6-9470-06c7887a2aab" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="GIS2BIM.GeoCodingGoogleAPI" x="427.6" y="130.8" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <PortInfo index="3" default="False" />
+      <PortInfo index="4" default="True" />
+      <ID value="4a574a48-aab3-45bf-a64d-98afa743366d" />
+      <Name value="GIS2BIM.GeoCodingGoogleAPI" />
+      <Description value="gets coordinate from adress with google API" />
+      <Inputs>
+        <Input value="Streetname" />
+        <Input value="Housenumber" />
+        <Input value="Place" />
+        <Input value="Country" />
+        <Input value="GoogleAPIKey" />
+      </Inputs>
+      <Outputs>
+        <Output value="Latitude" />
+        <Output value="Longitude" />
+        <Output value="Elevation" />
+        <Output value="XML" />
+        <Output value="GoogleAPILink" />
+        <Output value="GoogleAPILinkElevation" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="802b0779-f439-4dbe-9283-8a2c84e5d5cd" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="55" y="146" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;Dunajska cesta&quot;;&#xA;&quot;18&quot;;&#xA;&quot;Ljubljana&quot;;&#xA;&quot;Slovenia&quot;;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="88aa23f8-eb65-407d-a431-c793dcc00bbc" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="GIS2BIM.OpenBrowser" x="902" y="289.6" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="False" />
+      <ID value="5de78370-8fa6-4929-a54a-aa73a5cbb7ee" />
+      <Name value="GIS2BIM.OpenBrowser" />
+      <Description value="Opens a new window in your default browser with the given url." />
+      <Inputs>
+        <Input value="toggle" />
+        <Input value="url" />
+      </Inputs>
+      <Outputs>
+        <Output value="run" />
+        <Output value="url" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="29fad1de-cef4-46a6-9470-06c7887a2aab" start_index="4" end="88aa23f8-eb65-407d-a431-c793dcc00bbc" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="802b0779-f439-4dbe-9283-8a2c84e5d5cd" start_index="0" end="29fad1de-cef4-46a6-9470-06c7887a2aab" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="802b0779-f439-4dbe-9283-8a2c84e5d5cd" start_index="1" end="29fad1de-cef4-46a6-9470-06c7887a2aab" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="802b0779-f439-4dbe-9283-8a2c84e5d5cd" start_index="2" end="29fad1de-cef4-46a6-9470-06c7887a2aab" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="802b0779-f439-4dbe-9283-8a2c84e5d5cd" start_index="3" end="29fad1de-cef4-46a6-9470-06c7887a2aab" end_index="3" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
